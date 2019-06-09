@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "821597a5-1ef7-408b-ad8f-5c15f329e008",
+		"name": "test_laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/test_laravel/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"test_laravel",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teamPlayers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/test_laravel//api/v1/teamPlayers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"test_laravel",
+						"",
+						"api",
+						"v1",
+						"teamPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePlayer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdjMjMzMTkzNGQ5NDdiMzFlYjZiNmMxNGYyYzA3NzkxY2JhNDk1NGY1OGMyMmI1MDE1ZWUzMTgxYWM2ZGMzMjFiM2U3NGE1MDcyNzA5OTlkIn0.eyJhdWQiOiIzIiwianRpIjoiN2MyMzMxOTM0ZDk0N2IzMWViNmI2YzE0ZjJjMDc3OTFjYmE0OTU0ZjU4YzIyYjUwMTVlZTMxODFhYzZkYzMyMWIzZTc0YTUwNzI3MDk5OWQiLCJpYXQiOjE1NjAwNjY1NjksIm5iZiI6MTU2MDA2NjU2OSwiZXhwIjoxNTkxNjg4OTY5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.BHO2KMROB56qOOXIxwM7G-b2BTQwpRtecG2hqED9cNvz2V_nRu-L0l_rxU9P8ucM2uluozieeHVNB3rjEqGpKMRhHZsQPFoBS06XZf__l6IDea_AsCvEMWLasAlKEYcYPXiVB5gL0LwSZDBQ8B4_fWmqKi2D_cDFPgYto2Ie4ZawQQcnpfVCpU7gBluhImABO3hS5ArqD-pFZ754sK-oHDwWyABvodcwzZY9K6V9FvYDNCqupzL0hjNp7xEvHmObKRzqdKyMI84P4WMdfiwoiQy1xT9S1v4JAiozbuzRJJuVuCYiACzbLK57ASxo9YK4h3hHF44KdTIjWVHkvV9n8FgM5RZijRhIky7jkebqw8GGLifnHglbnoCI5WdAGEh6ro7q99PIZ2q38CspjGBrHWglGRI64OTLNOoLpx6Ofc9hkJKY41BjmoUMlWp0jAzt7VTxrSzDJ11Bsix4hA4S4h1BNS_2Ofj9Vdw4lngN7gJF4jPmeiwM3-t206RQQy3kifSYyAYwPe-nsxARf9GWgtzjPPxV3vPxNSTlEhHONswkUWxTGRDl44rFQfK1pwRSptmIAZD6QydAfefwom-EbhjNy88oEkyrhfJJJMElwaJWGc1CUix2jTokfkyk6_s2vauZQ1ycrcoONmT6ztlPHFBzEtUW0IuNjqwTrWi4aE4"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fname",
+							"value": "a",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lname",
+							"value": "b",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/test_laravel//api/v1/updatePlayer/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"test_laravel",
+						"",
+						"api",
+						"v1",
+						"updatePlayer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTeam",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdjMjMzMTkzNGQ5NDdiMzFlYjZiNmMxNGYyYzA3NzkxY2JhNDk1NGY1OGMyMmI1MDE1ZWUzMTgxYWM2ZGMzMjFiM2U3NGE1MDcyNzA5OTlkIn0.eyJhdWQiOiIzIiwianRpIjoiN2MyMzMxOTM0ZDk0N2IzMWViNmI2YzE0ZjJjMDc3OTFjYmE0OTU0ZjU4YzIyYjUwMTVlZTMxODFhYzZkYzMyMWIzZTc0YTUwNzI3MDk5OWQiLCJpYXQiOjE1NjAwNjY1NjksIm5iZiI6MTU2MDA2NjU2OSwiZXhwIjoxNTkxNjg4OTY5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.BHO2KMROB56qOOXIxwM7G-b2BTQwpRtecG2hqED9cNvz2V_nRu-L0l_rxU9P8ucM2uluozieeHVNB3rjEqGpKMRhHZsQPFoBS06XZf__l6IDea_AsCvEMWLasAlKEYcYPXiVB5gL0LwSZDBQ8B4_fWmqKi2D_cDFPgYto2Ie4ZawQQcnpfVCpU7gBluhImABO3hS5ArqD-pFZ754sK-oHDwWyABvodcwzZY9K6V9FvYDNCqupzL0hjNp7xEvHmObKRzqdKyMI84P4WMdfiwoiQy1xT9S1v4JAiozbuzRJJuVuCYiACzbLK57ASxo9YK4h3hHF44KdTIjWVHkvV9n8FgM5RZijRhIky7jkebqw8GGLifnHglbnoCI5WdAGEh6ro7q99PIZ2q38CspjGBrHWglGRI64OTLNOoLpx6Ofc9hkJKY41BjmoUMlWp0jAzt7VTxrSzDJ11Bsix4hA4S4h1BNS_2Ofj9Vdw4lngN7gJF4jPmeiwM3-t206RQQy3kifSYyAYwPe-nsxARf9GWgtzjPPxV3vPxNSTlEhHONswkUWxTGRDl44rFQfK1pwRSptmIAZD6QydAfefwom-EbhjNy88oEkyrhfJJJMElwaJWGc1CUix2jTokfkyk6_s2vauZQ1ycrcoONmT6ztlPHFBzEtUW0IuNjqwTrWi4aE4"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "aaa",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/test_laravel//api/v1/updateTeam/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"test_laravel",
+						"",
+						"api",
+						"v1",
+						"updateTeam",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchTeam",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzVkZWE4OTJkZTE4MDI0ZDg5MjJmMDg4MTI4NmIwMjY1MzgwN2RiYjE2NjdmOTgzMzA3Mjk3ZTU1NTIzNjBkZWEwODlmZjI5NjAxY2FjIn0.eyJhdWQiOiIzIiwianRpIjoiN2FjNWRlYTg5MmRlMTgwMjRkODkyMmYwODgxMjg2YjAyNjUzODA3ZGJiMTY2N2Y5ODMzMDcyOTdlNTU1MjM2MGRlYTA4OWZmMjk2MDFjYWMiLCJpYXQiOjE1NjAwNjk2MzgsIm5iZiI6MTU2MDA2OTYzOCwiZXhwIjoxNTkxNjkyMDM4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Mt8_2U0dHXORHyqCQ1DetSLLpVPRo2JbCN3VlUdqTvffsS37ipOl370YkaMCmWDVnGB0GaaajtH5kpN4cXs-qyVnPKBrpKKphmeYqEA6JkI0BNYlhjvT8gnXKAHrqLu0WI5EtB8rmkNU_LH0EPI4ndUTZlQCMvdsWf8OwVk0NfjiWIOCsjBRGW1AzIZXXNqqnX-unJFNKfr0ZikGKEsOggn5Y8NlnbNvvGCV9TFBqDMxV9FdStWC8Az2-AnXEOgAXp1dN-gO7R3ZqDqy4LZBD7uK3CA4Y1ymn4jENP3g2Cm7ldj9M-dvi9i542gUMkrpmVDHPZaLClT5EYtynaWDu_RLgA0ouVxSkG6exGbMm8KnlJXVffE3qTrK0egsPh4HTX-59aRBLoIFtkvGYYH1Ta3ikwj5MRjt8AiJ3Kewk2v_IeJHcSvF8SHu7IYD3_SjMNNYCtM5WirvCf3vbtuzo3j6lVdlDmqS8dgejnZT1sy62a2wZtJESmpEfp4K81IH3AZb4Dw9Z6dvGMwwOBPO1FD2p71VKh-imv1K935wwRCLxNeXiTcYbGH6Q9FHtVbEN4OU8brH2uupuTlcoBFtNP2tOp2dRKJnAX6OcaS53CUKx8m2ZYYAZXkbGIGdUwK0vf_6Jv021isU6sNPw-iE08Nu2Re7PNYvcKd8N-gnqBc"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "aasdasd",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/test_laravel//api/v1/searchTeam",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"test_laravel",
+						"",
+						"api",
+						"v1",
+						"searchTeam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchPlayer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzVkZWE4OTJkZTE4MDI0ZDg5MjJmMDg4MTI4NmIwMjY1MzgwN2RiYjE2NjdmOTgzMzA3Mjk3ZTU1NTIzNjBkZWEwODlmZjI5NjAxY2FjIn0.eyJhdWQiOiIzIiwianRpIjoiN2FjNWRlYTg5MmRlMTgwMjRkODkyMmYwODgxMjg2YjAyNjUzODA3ZGJiMTY2N2Y5ODMzMDcyOTdlNTU1MjM2MGRlYTA4OWZmMjk2MDFjYWMiLCJpYXQiOjE1NjAwNjk2MzgsIm5iZiI6MTU2MDA2OTYzOCwiZXhwIjoxNTkxNjkyMDM4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Mt8_2U0dHXORHyqCQ1DetSLLpVPRo2JbCN3VlUdqTvffsS37ipOl370YkaMCmWDVnGB0GaaajtH5kpN4cXs-qyVnPKBrpKKphmeYqEA6JkI0BNYlhjvT8gnXKAHrqLu0WI5EtB8rmkNU_LH0EPI4ndUTZlQCMvdsWf8OwVk0NfjiWIOCsjBRGW1AzIZXXNqqnX-unJFNKfr0ZikGKEsOggn5Y8NlnbNvvGCV9TFBqDMxV9FdStWC8Az2-AnXEOgAXp1dN-gO7R3ZqDqy4LZBD7uK3CA4Y1ymn4jENP3g2Cm7ldj9M-dvi9i542gUMkrpmVDHPZaLClT5EYtynaWDu_RLgA0ouVxSkG6exGbMm8KnlJXVffE3qTrK0egsPh4HTX-59aRBLoIFtkvGYYH1Ta3ikwj5MRjt8AiJ3Kewk2v_IeJHcSvF8SHu7IYD3_SjMNNYCtM5WirvCf3vbtuzo3j6lVdlDmqS8dgejnZT1sy62a2wZtJESmpEfp4K81IH3AZb4Dw9Z6dvGMwwOBPO1FD2p71VKh-imv1K935wwRCLxNeXiTcYbGH6Q9FHtVbEN4OU8brH2uupuTlcoBFtNP2tOp2dRKJnAX6OcaS53CUKx8m2ZYYAZXkbGIGdUwK0vf_6Jv021isU6sNPw-iE08Nu2Re7PNYvcKd8N-gnqBc"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "aasdasd",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/test_laravel//api/v1/searchPlayer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"test_laravel",
+						"",
+						"api",
+						"v1",
+						"searchPlayer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
